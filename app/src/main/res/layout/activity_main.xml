@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33b5e5"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/Button01"
+        android:background="@color/background_material_light"
+        android:backgroundTint="@color/background_material_light"
+        android:text="@string/quitter" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:background="@color/background_material_light"
+        android:backgroundTint="@color/background_material_light"
+        android:text="@string/aide" />
+
+    <ImageView
+        android:id="@+id/logoentreprise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginTop="41dp"
+        android:contentDescription="@string/logo_application"
+        android:src="@drawable/logoentreprise" />
+
+</RelativeLayout>

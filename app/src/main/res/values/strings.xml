@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CreanTreprise</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="blanc">#FFFFFF</string>
+    <string name="quitter">QUITTER</string>
+    <string name="aide">AIDE</string>
+    <string name="logo_application">Logo application</string>
+
+</resources>
