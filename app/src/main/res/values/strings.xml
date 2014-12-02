@@ -8,5 +8,7 @@
     <string name="quitter">QUITTER</string>
     <string name="aide">AIDE</string>
     <string name="logo_application">Logo application</string>
+    <string name="title_activity_questionnaire_entree">QuestionnaireEntree</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
