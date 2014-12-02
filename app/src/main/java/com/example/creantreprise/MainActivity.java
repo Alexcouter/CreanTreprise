@@ -2,6 +2,7 @@ package com.example.creantreprise;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -26,15 +27,15 @@ public class MainActivity extends Activity {
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
         logo.startAnimation(fadeInAnimation);
 
-        quitter.setOnTouchListener(new OnTouchListener() {
+        quitter.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch(event.getAction() & MotionEvent.ACTION_MASK) {
                     case MotionEvent.ACTION_DOWN:
-                        quitter.setBackgroundColor(0xFF303030); // if you want to handle the touch event
+                        setBackgroundColor(0xFF303030); // if you want to handle the touch event
                         return true;
                     case MotionEvent.ACTION_UP:
-                        quitter.setBackgroundColor(getResources().getColor(R.color.background_material_light));
+                        setBackgroundColor(getResources().getColor(R.color.background_material_light));
                         return true;
                     default:
                         return false;
