@@ -18,7 +18,6 @@ public class QuestionnaireEntree extends Activity {
 
         TextView questionnaireentree = (TextView)findViewById(R.id.questionnaireentree);
 
-
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
 
         questionnaireentree.startAnimation(fadeInAnimation);
