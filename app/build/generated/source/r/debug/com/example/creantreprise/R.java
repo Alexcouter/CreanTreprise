@@ -15,7 +15,8 @@ public final class R {
         public static final int abc_slide_in_top=0x7f040003;
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
-        public static final int fadein=0x7f040006;
+        public static final int anim_alpha=0x7f040006;
+        public static final int fadein=0x7f040007;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1322,12 +1323,18 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f070030;
         public static final int action_mode_bar_stub=0x7f07002f;
         public static final int action_mode_close_button=0x7f070022;
-        public static final int action_settings=0x7f070047;
+        public static final int action_settings=0x7f07004f;
         public static final int activity_chooser_view_content=0x7f070023;
         public static final int aidebouton=0x7f070042;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
         public static final int bottom=0x7f070016;
+        public static final int button=0x7f070048;
+        public static final int button2=0x7f070049;
+        public static final int button3=0x7f07004a;
+        public static final int button4=0x7f07004c;
+        public static final int button5=0x7f07004d;
+        public static final int button6=0x7f07004e;
         public static final int checkbox=0x7f07002b;
         public static final int collapseActionView=0x7f070011;
         public static final int decor_content_parent=0x7f070031;
@@ -1375,6 +1382,8 @@ containing a value of this type.
         public static final int split_action_bar=0x7f07001e;
         public static final int submit_area=0x7f07003e;
         public static final int tabMode=0x7f070002;
+        public static final int textView=0x7f070047;
+        public static final int textView2=0x7f07004b;
         public static final int title=0x7f070029;
         public static final int top=0x7f070015;
         public static final int up=0x7f07001f;

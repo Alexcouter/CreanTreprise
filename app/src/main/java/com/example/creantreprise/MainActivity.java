@@ -2,7 +2,6 @@ package com.example.creantreprise;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -19,27 +18,19 @@ public class MainActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        boolean check=false;
         ImageView logo = (ImageView) findViewById(R.id.logoentreprise);
-        Button quitter = (Button) findViewById(R.id.quitterbouton);
+        final Button quitter = (Button) findViewById(R.id.quitterbouton);
 
-
+        final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
         logo.startAnimation(fadeInAnimation);
 
-        quitter.setOnTouchListener(new View.OnTouchListener() {
+        quitter.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch(event.getAction() & MotionEvent.ACTION_MASK) {
-                    case MotionEvent.ACTION_DOWN:
-                        setBackgroundColor(0xFF303030); // if you want to handle the touch event
-                        return true;
-                    case MotionEvent.ACTION_UP:
-                        setBackgroundColor(getResources().getColor(R.color.background_material_light));
-                        return true;
-                    default:
-                        return false;
-                }
+            public void onClick(View view) {
+                view.startAnimation(animAlpha);
+                view.setVisibility(View.INVISIBLE);
             }
         });
     }
