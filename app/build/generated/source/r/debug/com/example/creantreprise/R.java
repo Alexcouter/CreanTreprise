@@ -1329,8 +1329,8 @@ containing a value of this type.
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
         public static final int bottom=0x7f070016;
-        public static final int button=0x7f070048;
-        public static final int button2=0x7f070049;
+        public static final int creaBilan =0x7f070048;
+        public static final int instJuriMay =0x7f070049;
         public static final int button3=0x7f07004a;
         public static final int button4=0x7f07004c;
         public static final int button5=0x7f07004d;
