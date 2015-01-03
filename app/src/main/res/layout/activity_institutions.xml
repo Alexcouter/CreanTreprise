@@ -9,11 +9,11 @@
         android:id="@+id/logoentreprise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/quitterbouton"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginRight="148dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="550dp"
+        android:layout_marginTop="5dp"
         android:contentDescription="@string/logo_application"
         android:src="@drawable/entrepriselogobright" />
 
@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:text="Accueil" />
@@ -56,6 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reseau entreprendre Mayenne"
+            android:paddingTop="@dimen/activity_horizontal_margin"
             android:textSize="15sp"
             android:id="@+id/entreprendreMayenne"
             android:layout_gravity="center"/>
@@ -73,6 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Initiative Mayenne"
+            android:paddingTop="@dimen/activity_horizontal_margin"
             android:textSize="15sp"
             android:id="@+id/initiativeMayenne"
             android:layout_gravity="center"/>
@@ -92,6 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Creation-reprise"
+            android:paddingTop="@dimen/activity_horizontal_margin"
             android:textSize="15sp"
             android:id="@+id/creationReprise"
             android:layout_gravity="center"/>
