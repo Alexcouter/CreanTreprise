@@ -51,21 +51,27 @@
         android:text="@string/creerBilan"
         android:id="@+id/creaBilan"
         android:layout_above="@+id/instJuriMay"
-        android:layout_alignLeft="@+id/aidebouton"
-        android:layout_alignStart="@+id/aidebouton"
-        android:layout_alignRight="@+id/quitterbouton"
-        android:layout_alignEnd="@+id/quitterbouton" />
+        android:layout_alignLeft="@+id/instJuriMay"
+        android:layout_alignStart="@+id/instJuriMay"
+        android:layout_alignRight="@+id/instJuriMay"
+        android:layout_alignEnd="@+id/instJuriMay"
+        android:layout_marginBottom="10dp"
+        android:background="@color/background_material_light"
+        android:textSize="25dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="75dp"
         android:text="@string/InstJuriMay"
         android:id="@+id/instJuriMay"
-        android:layout_marginBottom="47dp"
+        android:background="@color/background_material_light"
+        android:backgroundTint="@color/background_material_light"
         android:layout_above="@+id/quitterbouton"
-        android:layout_alignLeft="@+id/creaBilan"
-        android:layout_alignStart="@+id/creaBilan"
+        android:layout_alignLeft="@+id/aidebouton"
+        android:layout_alignStart="@+id/aidebouton"
         android:layout_alignRight="@+id/quitterbouton"
-        android:layout_alignEnd="@+id/quitterbouton" />
+        android:layout_alignEnd="@+id/quitterbouton"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp" />
 
 </RelativeLayout>
