@@ -40,7 +40,7 @@ public class Splash extends Activity {
                 Log.e(TAG, e.getMessage());
             }
 
-            // Start main activity
+            // Suivant le questionnaire on choisit de rentrer ou non sur la page d'accueil.
             Intent intent = new Intent(Splash.this, MainActivity.class);
             Splash.this.startActivity(intent);
             Splash.this.finish();
