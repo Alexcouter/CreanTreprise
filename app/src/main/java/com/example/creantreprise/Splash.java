@@ -45,7 +45,7 @@ public class Splash extends Activity {
             // Suivant le questionnaire on choisit de rentrer ou non sur la page d'accueil.
             int reponseCorrecte;
 
-            // On récupère notre ressource au format int
+            // On récupère notre ressource au format int.
             reponseCorrecte = getResources().getString(R.qEntree.reponseQ);
             if (reponseCorrecte == 0) {
                 Intent intent = new Intent(Splash.this, MainActivity.class);
