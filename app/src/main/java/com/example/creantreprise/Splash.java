@@ -3,8 +3,6 @@ package com.example.creantreprise;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.Spanned;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
@@ -46,17 +44,18 @@ public class Splash extends Activity {
             int reponseCorrecte;
 
             // On récupère notre ressource au format int.
-            reponseCorrecte = getResources().getString(R.qEntree.reponseQ);
-            if (reponseCorrecte == 0) {
-                Intent intent = new Intent(Splash.this, MainActivity.class);
-                Splash.this.startActivity(intent);
-                Splash.this.finish();
-            }
-            else {
-                Intent intent = new Intent(Splash.this, QuestionnaireEntree.class);
-                Splash.this.startActivity(intent);
-                Splash.this.finish();
-            }
+
+//           reponseCorrecte = getResources().getString(R.);
+//            if (reponseCorrecte == 0) {
+              Intent intent = new Intent(Splash.this, MainActivity.class);
+              Splash.this.startActivity(intent);
+              Splash.this.finish();
+//            }
+//            else {
+//                Intent intent = new Intent(Splash.this, QuestionnaireEntree.class);
+//                Splash.this.startActivity(intent);
+//                Splash.this.finish();
+//            }
         }
     }
 }
