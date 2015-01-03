@@ -2,15 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}">
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#33b5e5">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/logolancement"
+       android:src="@drawable/splash"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="#33b5e5"
-        android:scaleType="centerInside"
-        android:src="@drawable/splash" />
+        android:scaleType="centerInside"/>
 </RelativeLayout>

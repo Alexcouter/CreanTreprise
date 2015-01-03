@@ -14,11 +14,11 @@ public class MainActivity extends Activity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)  {
+    protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        boolean check=false;
+        boolean check = false;
         ImageView logo = (ImageView) findViewById(R.id.logoentreprise);
         final Button quitter = (Button) findViewById(R.id.quitterbouton);
 
@@ -26,14 +26,15 @@ public class MainActivity extends Activity {
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
         logo.startAnimation(fadeInAnimation);
 
+
+// Bouton quitter
         quitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 view.startAnimation(animAlpha);
                 view.setVisibility(View.INVISIBLE);
                 // Fini le process
-                finish();
-                System.exit(0);
+                android.os.Process.killProcess(android.os.Process.myPid());
             }
         });
     }
