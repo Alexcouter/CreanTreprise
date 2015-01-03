@@ -15,5 +15,4 @@
     <string name="title_activity_utilisateur_non_concerne">utilisateurNonConcerne</string>
     <string name="nonconcerne">Désolé, vous ne pouvez pas utiliser l\'application.</string>
     <string name="title_activity_reponse_questionnaire">reponseQuestionnaire</string>
-
 </resources>
