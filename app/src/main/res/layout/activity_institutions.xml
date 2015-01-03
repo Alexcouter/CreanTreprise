@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33b5e5"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/logoentreprise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="550dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/logo_application"
+        android:src="@drawable/entrepriselogobright" />
+
+    <Button
+        android:id="@+id/accueilInstitution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Accueil" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scrollView" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="102dp"
+        android:layout_below="@+id/accueilInstitution"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textIsSelectable="false">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Institutions en Mayenne"
+            android:textSize="30sp"
+            android:id="@+id/titreInstitutions"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reseau entreprendre Mayenne"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textSize="15sp"
+            android:id="@+id/entreprendreMayenne"
+            android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La mission de Réseau Entreprendre Mayenne est de contribuer à la réussite de nouveaux entrepreneurs significativement créateurs d'emplois et de richesses."
+                android:textSize="10sp"
+                android:id="@+id/entreprendreMayennetxt"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"/>
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Initiative Mayenne"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textSize="15sp"
+            android:id="@+id/initiativeMayenne"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 1er réseau associatif de financement des créateurs d'entreprise
+            - 230 plateformes d'accompagnement dans toute la France
+            - 6 565 entreprises et 39 538 emplois créés ou maintenus en 2013"
+            android:textSize="10sp"
+            android:id="@+id/initiativeMayennetxt"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"/>
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creation-reprise"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textSize="15sp"
+            android:id="@+id/creationReprise"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Objectif : valoriser le goût d’entreprendre pour favoriser l’émergence de projets, faciliter la création et la transmission sur le département et regrouper tous les partenaires mayennais autour de la création-reprise d’entreprise."
+            android:textSize="10sp"
+            android:id="@+id/creationReprisetxt"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"/>
+        />
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
