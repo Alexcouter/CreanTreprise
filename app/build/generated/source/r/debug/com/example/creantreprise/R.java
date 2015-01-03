@@ -1329,14 +1329,13 @@ containing a value of this type.
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
         public static final int bottom=0x7f070016;
-        public static final int creaBilan =0x7f070048;
-        public static final int instJuriMay =0x7f070049;
         public static final int button3=0x7f07004a;
         public static final int button4=0x7f07004c;
         public static final int button5=0x7f07004d;
         public static final int button6=0x7f07004e;
         public static final int checkbox=0x7f07002b;
         public static final int collapseActionView=0x7f070011;
+        public static final int creaBilan=0x7f070044;
         public static final int decor_content_parent=0x7f070031;
         public static final int default_activity_button=0x7f070026;
         public static final int dialog=0x7f070012;
@@ -1351,6 +1350,7 @@ containing a value of this type.
         public static final int icon=0x7f070028;
         public static final int ifRoom=0x7f07000e;
         public static final int image=0x7f070025;
+        public static final int instJuriMay=0x7f070045;
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f070027;
         public static final int logoentreprise=0x7f070043;
@@ -1360,11 +1360,11 @@ containing a value of this type.
         public static final int normal=0x7f070000;
         public static final int progress_circular=0x7f07001c;
         public static final int progress_horizontal=0x7f07001d;
-        public static final int questionnairedesc=0x7f070046;
-        public static final int questionnaireentree=0x7f070045;
+        public static final int questionnairedesc=0x7f070048;
+        public static final int questionnaireentree=0x7f070047;
         public static final int quitterbouton=0x7f070041;
         public static final int radio=0x7f07002d;
-        public static final int scrollView=0x7f070044;
+        public static final int scrollView=0x7f070046;
         public static final int search_badge=0x7f070037;
         public static final int search_bar=0x7f070036;
         public static final int search_button=0x7f070038;
@@ -1382,7 +1382,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f07001e;
         public static final int submit_area=0x7f07003e;
         public static final int tabMode=0x7f070002;
-        public static final int textView=0x7f070047;
+        public static final int textView=0x7f070049;
         public static final int textView2=0x7f07004b;
         public static final int title=0x7f070029;
         public static final int top=0x7f070015;
@@ -1427,30 +1427,32 @@ containing a value of this type.
         public static final int menu_questionnaire_entree=0x7f0c0000;
     }
     public static final class string {
-        public static final int abc_action_bar_home_description=0x7f0a0000;
-        public static final int abc_action_bar_home_description_format=0x7f0a0001;
-        public static final int abc_action_bar_home_subtitle_description_format=0x7f0a0002;
-        public static final int abc_action_bar_up_description=0x7f0a0003;
-        public static final int abc_action_menu_overflow_description=0x7f0a0004;
-        public static final int abc_action_mode_done=0x7f0a0005;
-        public static final int abc_activity_chooser_view_see_all=0x7f0a0006;
-        public static final int abc_activitychooserview_choose_application=0x7f0a0007;
-        public static final int abc_searchview_description_clear=0x7f0a0008;
-        public static final int abc_searchview_description_query=0x7f0a0009;
-        public static final int abc_searchview_description_search=0x7f0a000a;
-        public static final int abc_searchview_description_submit=0x7f0a000b;
-        public static final int abc_searchview_description_voice=0x7f0a000c;
-        public static final int abc_shareactionprovider_share_with=0x7f0a000d;
-        public static final int abc_shareactionprovider_share_with_application=0x7f0a000e;
-        public static final int action_settings=0x7f0a000f;
-        public static final int aide=0x7f0a0010;
-        public static final int app_name=0x7f0a0011;
-        public static final int blanc=0x7f0a0012;
-        public static final int hello_world=0x7f0a0013;
-        public static final int logo_application=0x7f0a0014;
-        public static final int quitter=0x7f0a0015;
-        public static final int title_activity_questionnaire_entree=0x7f0a0016;
-        public static final int title_activity_splash=0x7f0a0017;
+        public static final int InstJuriMay=0x7f0a0000;
+        public static final int abc_action_bar_home_description=0x7f0a0001;
+        public static final int abc_action_bar_home_description_format=0x7f0a0002;
+        public static final int abc_action_bar_home_subtitle_description_format=0x7f0a0003;
+        public static final int abc_action_bar_up_description=0x7f0a0004;
+        public static final int abc_action_menu_overflow_description=0x7f0a0005;
+        public static final int abc_action_mode_done=0x7f0a0006;
+        public static final int abc_activity_chooser_view_see_all=0x7f0a0007;
+        public static final int abc_activitychooserview_choose_application=0x7f0a0008;
+        public static final int abc_searchview_description_clear=0x7f0a0009;
+        public static final int abc_searchview_description_query=0x7f0a000a;
+        public static final int abc_searchview_description_search=0x7f0a000b;
+        public static final int abc_searchview_description_submit=0x7f0a000c;
+        public static final int abc_searchview_description_voice=0x7f0a000d;
+        public static final int abc_shareactionprovider_share_with=0x7f0a000e;
+        public static final int abc_shareactionprovider_share_with_application=0x7f0a000f;
+        public static final int action_settings=0x7f0a0010;
+        public static final int aide=0x7f0a0011;
+        public static final int app_name=0x7f0a0012;
+        public static final int blanc=0x7f0a0013;
+        public static final int creerBilan=0x7f0a0014;
+        public static final int hello_world=0x7f0a0015;
+        public static final int logo_application=0x7f0a0016;
+        public static final int quitter=0x7f0a0017;
+        public static final int title_activity_questionnaire_entree=0x7f0a0018;
+        public static final int title_activity_splash=0x7f0a0019;
     }
     public static final class style {
         /** 

@@ -31,6 +31,9 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 view.startAnimation(animAlpha);
                 view.setVisibility(View.INVISIBLE);
+                // Fini le process
+                finish();
+                System.exit(0);
             }
         });
     }
