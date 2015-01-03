@@ -44,18 +44,17 @@ public class Splash extends Activity {
             int reponseCorrecte;
 
             // On récupère notre ressource au format int.
-  //          R.donneesUtilisateur.
-//           reponseCorrecte = getResources().getString(R.);
-//            if (reponseCorrecte == 0) {
+          reponseCorrecte = getResources().getInteger(R.integer.qreponse);
+        if (reponseCorrecte == 1) {
               Intent intent = new Intent(Splash.this, MainActivity.class);
               Splash.this.startActivity(intent);
               Splash.this.finish();
-//            }
-//            else {
-//                Intent intent = new Intent(Splash.this, QuestionnaireEntree.class);
-//                Splash.this.startActivity(intent);
-//                Splash.this.finish();
-//            }
+            }
+            else {
+                Intent intent = new Intent(Splash.this, QuestionnaireEntree.class);
+                Splash.this.startActivity(intent);
+                Splash.this.finish();
+            }
         }
     }
 }

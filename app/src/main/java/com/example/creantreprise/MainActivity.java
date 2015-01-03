@@ -10,7 +10,6 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 
-    //	Button quitter;
 
 
     @Override
@@ -37,6 +36,8 @@ public class MainActivity extends Activity {
                 android.os.Process.killProcess(android.os.Process.myPid());
             }
         });
+
+
     }
 
 
