@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33b5e5"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/accueilInstitution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Accueil" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scrollView" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="102dp"
+        android:layout_below="@+id/accueilInstitution"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textIsSelectable="false">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Institutions en Mayenne"
+            android:textSize="30sp"
+            android:id="@+id/titreInstitutions"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reseau entreprendre Mayenne"
+            android:textSize="15sp"
+            android:id="@+id/entreprendreMayenne"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
