@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
         logo.startAnimation(fadeInAnimation);
 
 
-// Bouton quitter
+        // Bouton quitter
         quitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

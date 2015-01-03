@@ -22,11 +22,11 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.creantreprise.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.example.creantreprise.Splash"
+            android:name=".Splash"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,8 +35,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.creantreprise.QuestionnaireEntree"
+            android:name=".QuestionnaireEntree"
             android:label="@string/title_activity_questionnaire_entree" >
+        </activity>
+        <activity
+            android:name=".utilisateurNonConcerne"
+            android:label="@string/title_activity_utilisateur_non_concerne"
+            android:parentActivityName=".QuestionnaireEntree" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.creantreprise.QuestionnaireEntree" />
+        </activity>
+        <activity
+            android:name=".reponseQuestionnaire"
+            android:label="@string/title_activity_reponse_questionnaire"
+            android:parentActivityName=".QuestionnaireEntree" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.creantreprise.QuestionnaireEntree" />
         </activity>
     </application>
 
