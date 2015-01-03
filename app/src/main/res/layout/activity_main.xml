@@ -47,27 +47,25 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:text="@string/creerBilan"
         android:id="@+id/creaBilan"
-        android:layout_toEndOf="@+id/aidebouton"
-        android:layout_marginBottom="109dp"
-        android:layout_above="@+id/quitterbouton"
-        android:layout_alignLeft="@+id/logoentreprise"
-        android:layout_alignStart="@+id/logoentreprise"
-        android:layout_alignRight="@+id/logoentreprise"
-        android:layout_alignEnd="@+id/logoentreprise" />
+        android:layout_above="@+id/instJuriMay"
+        android:layout_alignLeft="@+id/aidebouton"
+        android:layout_alignStart="@+id/aidebouton"
+        android:layout_alignRight="@+id/quitterbouton"
+        android:layout_alignEnd="@+id/quitterbouton" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:text="@string/InstJuriMay"
         android:id="@+id/instJuriMay"
+        android:layout_marginBottom="47dp"
         android:layout_above="@+id/quitterbouton"
-        android:layout_marginBottom="54dp"
-        android:layout_alignRight="@+id/creaBilan"
-        android:layout_alignEnd="@+id/creaBilan"
         android:layout_alignLeft="@+id/creaBilan"
-        android:layout_alignStart="@+id/creaBilan" />
+        android:layout_alignStart="@+id/creaBilan"
+        android:layout_alignRight="@+id/quitterbouton"
+        android:layout_alignEnd="@+id/quitterbouton" />
 
 </RelativeLayout>
