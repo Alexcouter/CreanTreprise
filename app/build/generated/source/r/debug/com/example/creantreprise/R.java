@@ -1323,7 +1323,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f070030;
         public static final int action_mode_bar_stub=0x7f07002f;
         public static final int action_mode_close_button=0x7f070022;
-        public static final int action_settings=0x7f07004f;
+        public static final int action_settings=0x7f070051;
         public static final int activity_chooser_view_content=0x7f070023;
         public static final int aidebouton=0x7f070042;
         public static final int always=0x7f07000f;
@@ -1350,10 +1350,12 @@ containing a value of this type.
         public static final int icon=0x7f070028;
         public static final int ifRoom=0x7f07000e;
         public static final int image=0x7f070025;
+        public static final int imageView=0x7f07004f;
         public static final int instJuriMay=0x7f070045;
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f070027;
         public static final int logoentreprise=0x7f070043;
+        public static final int logolancement=0x7f070050;
         public static final int middle=0x7f07000b;
         public static final int never=0x7f07000d;
         public static final int none=0x7f070003;
