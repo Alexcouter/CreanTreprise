@@ -8,13 +8,6 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
 
-    <android:uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -39,21 +32,10 @@
             android:label="@string/title_activity_questionnaire_entree" >
         </activity>
         <activity
-            android:name=".utilisateurNonConcerne"
-            android:label="@string/title_activity_utilisateur_non_concerne"
-            android:parentActivityName=".QuestionnaireEntree" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.creantreprise.QuestionnaireEntree" />
+            android:name=".institutionsMayenne"
+            android:label="Institutions en mayenne" >
         </activity>
-        <activity
-            android:name=".reponseQuestionnaire"
-            android:label="@string/title_activity_reponse_questionnaire"
-            android:parentActivityName=".QuestionnaireEntree" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.creantreprise.QuestionnaireEntree" />
-        </activity>
+
     </application>
 
 </manifest>
