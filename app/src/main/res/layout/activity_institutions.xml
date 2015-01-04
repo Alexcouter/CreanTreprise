@@ -9,49 +9,56 @@
         android:id="@+id/logoentreprise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginRight="150dp"
-        android:layout_marginBottom="550dp"
-        android:layout_marginTop="5dp"
         android:contentDescription="@string/logo_application"
-        android:src="@drawable/entrepriselogobright" />
+        android:src="@drawable/entrepriselogobright"
+        android:layout_alignBottom="@+id/accueilInstitution"
+        android:scaleType="centerInside"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_toLeftOf="@+id/accueilInstitution"
+        android:layout_alignTop="@+id/accueilInstitution"
+        android:layout_toRightOf="@+id/scrollView"
+        android:layout_toEndOf="@+id/scrollView" />
 
     <Button
         android:id="@+id/accueilInstitution"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
         android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:text="Accueil" />
+        android:text="Accueil"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/scrollView" >
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logoentreprise">
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Institutions en Mayenne"
+        android:textSize="30sp"
+        android:id="@+id/titreInstitutions"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/scrollView"
+        android:layout_centerHorizontal="true" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="102dp"
-        android:layout_below="@+id/accueilInstitution"
+        android:textIsSelectable="false"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textIsSelectable="false">
+        android:layout_alignTop="@+id/scrollView">
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Institutions en Mayenne"
-            android:textSize="30sp"
-            android:id="@+id/titreInstitutions"
-            android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,17 +67,23 @@
             android:paddingTop="@dimen/activity_horizontal_margin"
             android:textSize="15sp"
             android:id="@+id/entreprendreMayenne"
-            android:layout_gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
+            android:layout_below="@+id/titreInstitutions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:layout_gravity="center" />
+
+        <TextView
+                android:layout_width="352dp"
                 android:layout_height="wrap_content"
                 android:text="La mission de Réseau Entreprendre Mayenne est de contribuer à la réussite de nouveaux entrepreneurs significativement créateurs d'emplois et de richesses."
                 android:textSize="10sp"
                 android:id="@+id/entreprendreMayennetxt"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_gravity="center"/>
-             <Button
+            android:layout_below="@+id/entreprendreMayenne"
+            android:layout_alignLeft="@+id/titreInstitutions"
+            android:layout_alignStart="@+id/titreInstitutions"
+            android:layout_gravity="center" />
+
+        <Button
             android:id="@+id/entreprendreMayenneButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -151,7 +164,6 @@
 
 
     </LinearLayout>
-    </ScrollView>
 
 
 </RelativeLayout>
