@@ -5,9 +5,26 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.creantreprise.Eurl"
-    android:background="#33b5e5">
+    android:background="#33b5e5"
+    android:id="@+id/aa">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView android:text="@string/titre_eurl" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewtitreEurl"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L&apos;entreprise individuelle (également appelée entreprise en nom propre) est la structure juridique la plus simple et la plus facile à gérer pour un créateur. Les formalités sont réduites au minimum et les règles de fonctionnement extrêmement simplifiées. Le dirigeant et l&apos;entreprise forment une seule et même personne et les bénéfices tirés de l&apos;activité sont soumis à l&apos;impôt sur le revenu.   En savoir plus sur http://lentreprise.lexpress.fr/creation-entreprise/statuts/l-entreprise-individuelle-en-resume_1533278.html#m6PsQSEUY9xS65Pl.99"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp" />
 
 </RelativeLayout>
