@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/instJuriMay"
+        android:id="@+id/InstJuriMay"
         android:layout_alignBottom="@+id/creaBilan"
         android:layout_toLeftOf="@+id/creaBilan"
         android:layout_toStartOf="@+id/creaBilan" />
@@ -87,7 +87,7 @@
         android:text="Question"
         android:id="@+id/textView2"
         android:textColor="@color/background_material_light"
-        android:layout_below="@+id/instJuriMay"
+        android:layout_below="@+id/InstJuriMay"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

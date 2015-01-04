@@ -55,7 +55,7 @@
         android:layout_alignRight="@+id/quitterbouton"
         android:layout_alignEnd="@+id/quitterbouton"
         android:background="@color/background_material_light"
-        android:layout_above="@+id/instJuriMay"
+        android:layout_above="@+id/InstJuriMay"
         android:layout_marginBottom="10dp"
         android:textSize="25dp" />
 
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="75dp"
         android:text="@string/InstJuriMay"
-        android:id="@+id/instJuriMay"
+        android:id="@+id/InstJuriMay"
         android:layout_above="@+id/quitterbouton"
         android:layout_alignLeft="@+id/aidebouton"
         android:layout_alignStart="@+id/aidebouton"

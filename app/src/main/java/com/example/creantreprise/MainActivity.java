@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
         boolean check = false;
         ImageView logo = (ImageView) findViewById(R.id.logoentreprise);
         final Button quitter = (Button) findViewById(R.id.quitterbouton);
-        final Button institutions = (Button) findViewById(R.id.instJuriMay);
+        final Button institutions = (Button) findViewById(R.id.InstJuriMay);
 
         final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);

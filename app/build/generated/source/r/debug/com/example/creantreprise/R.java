@@ -1362,7 +1362,7 @@ containing a value of this type.
         public static final int initiativeMayenne=0x7f070048;
         public static final int initiativeMayenneButton=0x7f07004a;
         public static final int initiativeMayennetxt=0x7f070049;
-        public static final int instJuriMay=0x7f070051;
+        public static final int InstJuriMay =0x7f070051;
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f070027;
         public static final int logoentreprise=0x7f070041;
