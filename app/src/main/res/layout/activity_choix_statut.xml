@@ -1,0 +1,191 @@
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="#33b5e5"
+    tools:context="com.example.creantreprise.ChoixStatut"
+    android:id="@+id/TableLayout">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Choix du statut juridique"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_span="3"
+            android:padding="18dip"
+            android:background="#b0b0b0"
+            android:textColor="#000"
+            android:id="@+id/TextViewTitreChoixStat" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#33b5e5">
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:text="Statut        Juridique"
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/TextView2"
+            android:text="Nombre d&apos;associés"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/TextView3"
+            android:text="Avis globale"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/TextView4"
+            android:text="Entreprise individuelle"
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/TextView5"
+            android:text="0"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/Button1"
+            android:text="@string/Voir"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/TextView6"
+            android:text="EURL"
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/TextView7"
+            android:text="0 à 1"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/Button2"
+            android:text="@string/Voir"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/TextView9"
+            android:text="SARL"
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/TextView10"
+            android:text="2 à 100"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/Button3"
+            android:text="@string/Voir"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:text="SAS"
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/TextView12"
+            android:text="1 à *"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/Button4"
+            android:text="@string/Voir"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+    </TableRow>
+
+
+
+
+</TableLayout>
