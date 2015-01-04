@@ -60,22 +60,42 @@
         android:layout_alignEnd="@+id/quitterbouton" />
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/InstJuriMay"
-        android:id="@+id/instJuriMay"
-        android:background="@color/background_material_light"
-        android:backgroundTint="@color/background_material_light"
-        android:textSize="15dp"
-        android:layout_above="@+id/quitterbouton"
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/creaBilan"
+        android:layout_alignStart="@+id/creaBilan"
+        android:layout_below="@+id/creaBilan"
         android:layout_alignRight="@+id/quitterbouton"
         android:layout_alignEnd="@+id/quitterbouton"
-        android:layout_marginBottom="10dp"
-        android:layout_toEndOf="@+id/aidebouton"
-        android:layout_row="0"
-        android:layout_column="1"
-        android:layout_alignLeft="@+id/creaBilan"
-        android:layout_alignStart="@+id/creaBilan" />
+        android:layout_above="@+id/quitterbouton">
+
+        <Button
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button2"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/InstJuriMay"
+            android:id="@+id/instJuriMay"
+            android:background="@color/background_material_light"
+            android:backgroundTint="@color/background_material_light"
+            android:textSize="15dp"
+            android:layout_above="@+id/quitterbouton"
+            android:layout_alignRight="@+id/quitterbouton"
+            android:layout_alignEnd="@+id/quitterbouton"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/aidebouton"
+            android:layout_alignLeft="@+id/quitterbouton"
+            android:layout_alignStart="@+id/quitterbouton"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+    </GridLayout>
 
 </RelativeLayout>

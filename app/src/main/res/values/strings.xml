@@ -16,5 +16,11 @@
     <string name="nonconcerne">Désolé, vous ne pouvez pas utiliser l\'application.</string>
     <string name="title_activity_reponse_questionnaire">reponseQuestionnaire</string>
     <string name="title_activity_aide">Aide</string>
+    <string name="title_activity_choix_statut">ChoixStatut</string>
+    <string name="Voir">Voir</string>
+    <string name="title_activity_entreprise_ind">EntrepriseInd</string>
+    <string name="title_activity_eurl">EURL</string>
+    <string name="title_activity_sarl">SARL</string>
+    <string name="title_activity_sas">Sas</string>
 
 </resources>

@@ -7,8 +7,6 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
-
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -35,7 +33,26 @@
             android:name=".institutionsMayenne"
             android:label="Institutions en mayenne" >
         </activity>
-
+        <activity
+            android:name=".ChoixStatut"
+            android:label="@string/title_activity_choix_statut" >
+        </activity>
+        <activity
+            android:name=".EntrepriseInd"
+            android:label="@string/title_activity_entreprise_ind" >
+        </activity>
+        <activity
+            android:name=".Eurl"
+            android:label="@string/title_activity_eurl" >
+        </activity>
+        <activity
+            android:name=".Sarl"
+            android:label="@string/title_activity_sarl" >
+        </activity>
+        <activity
+            android:name=".Sas"
+            android:label="@string/title_activity_sas" >
+        </activity>
     </application>
 
 </manifest>
