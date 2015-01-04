@@ -50,7 +50,7 @@
         android:layout_height="75dp"
         android:text="@string/creerBilan"
         android:id="@+id/creaBilan"
-        android:background="@color/background_material_light"
+        android:background="@android:color/background_light"
         android:textSize="25dp"
         android:layout_above="@+id/btnLL"
         android:layout_alignLeft="@+id/aidebouton"
@@ -81,11 +81,11 @@
             android:text="Institut° Juridiques" />
 
         <Button
-            android:id="@+id/cancelButton"
+            android:id="@+id/statutJ"
             android:layout_width="0dp"
             android:layout_height="75dp"
             android:layout_weight="1"
-            android:text="Profil Juridique"
+            android:text="Statut Juridique"
             android:background="@android:color/background_light"
             android:layout_marginLeft="5dp" />
     </LinearLayout>

@@ -40,21 +40,21 @@ public class Splash extends Activity {
                 Log.e(TAG, e.getMessage());
             }
 
-            // Suivant le questionnaire on choisit de rentrer ou non sur la page d'accueil.
-            int reponseCorrecte;
-
-            // On récupère notre ressource au format int.
-          reponseCorrecte = getResources().getInteger(R.integer.qreponse);
-        if (reponseCorrecte == 1) {
+//            // Suivant le questionnaire on choisit de rentrer ou non sur la page d'accueil.
+//            int reponseCorrecte;
+//
+//            // On récupère notre ressource au format int.
+//          reponseCorrecte = getResources().getInteger(R.xml.);
+//        if (reponseCorrecte == 1) {
               Intent intent = new Intent(Splash.this, MainActivity.class);
               Splash.this.startActivity(intent);
               Splash.this.finish();
-            }
-            else {
-                Intent intent = new Intent(Splash.this, QuestionnaireEntree.class);
-                Splash.this.startActivity(intent);
-                Splash.this.finish();
-            }
-        }
+//            }
+//            else {
+//                Intent intent = new Intent(Splash.this, QuestionnaireEntree.class);
+//                Splash.this.startActivity(intent);
+//                Splash.this.finish();
+//            }
+       }
     }
 }

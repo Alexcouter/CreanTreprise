@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
         ImageView logo = (ImageView) findViewById(R.id.logoentreprise);
         final Button quitter = (Button) findViewById(R.id.quitterbouton);
         final Button institutions = (Button) findViewById(R.id.InstJuriMay);
+        final Button statut = (Button) findViewById(R.id.statutJ);
 
         final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
@@ -47,6 +48,18 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent i = new Intent(getApplicationContext(),institutionsMayenne.class);
+                startActivity(i);
+            }
+        });
+
+        //Bouton choix statut
+
+        statut.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(getApplicationContext(),ChoixStatut.class);
                 startActivity(i);
             }
         });

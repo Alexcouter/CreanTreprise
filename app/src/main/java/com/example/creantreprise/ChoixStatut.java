@@ -29,25 +29,25 @@ public class ChoixStatut extends Activity{
             }
         });
 
-        eurl.setOnClickListener(new View.OnClickListener() {
+//        eurl.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                // TODO Auto-generated method stub
+//                Intent i = new Intent(getApplicationContext(),Eurl.class);
+//                startActivity(i);
+//            }
+//        });
 
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent i = new Intent(getApplicationContext(),Eurl.class);
-                startActivity(i);
-            }
-        });
-
-        sarl.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent i = new Intent(getApplicationContext(),Sarl.class);
-                startActivity(i);
-            }
-        });
+//        sarl.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                // TODO Auto-generated method stub
+//                Intent i = new Intent(getApplicationContext(),Sarl.class);
+//                startActivity(i);
+//            }
+//        });
 
         sas.setOnClickListener(new View.OnClickListener() {
 
