@@ -1,6 +1,7 @@
 package com.example.creantreprise;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -20,6 +21,7 @@ public class MainActivity extends Activity {
         boolean check = false;
         ImageView logo = (ImageView) findViewById(R.id.logoentreprise);
         final Button quitter = (Button) findViewById(R.id.quitterbouton);
+        final Button institutions = (Button) findViewById(R.id.instJuriMay);
 
         final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
@@ -34,6 +36,18 @@ public class MainActivity extends Activity {
                 view.setVisibility(View.INVISIBLE);
                 // Fini le process
                 android.os.Process.killProcess(android.os.Process.myPid());
+            }
+        });
+
+        //Bouton institutions
+
+        institutions.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(getApplicationContext(),institutionsMayenne.class);
+                startActivity(i);
             }
         });
 
