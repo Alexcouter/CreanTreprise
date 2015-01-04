@@ -7,7 +7,7 @@
     tools:context="com.example.creantreprise.Aide"
     android:background="#33b5e5">
     <Button
-        android:id="@+id/activity_main"
+        android:id="@+id/accueil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -27,7 +27,7 @@
         android:id="@+id/titreAide"
         android:textColor="#FFFFFF"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/activity_main"
+        android:layout_below="@+id/accueil"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="39dp" />
 
@@ -40,7 +40,7 @@
         android:layout_above="@+id/titreAide"
         android:layout_toLeftOf="@+id/textView3"
         android:layout_toStartOf="@+id/textView3"
-        android:layout_alignTop="@+id/activity_main" />
+        android:layout_alignTop="@+id/accueil" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,6 +50,6 @@
         android:id="@+id/textView3"
         android:layout_marginTop="41dp"
         android:layout_below="@+id/titreAide"
-        android:layout_toLeftOf="@+id/activity_main"
-        android:layout_toStartOf="@+id/activity_main" />
+        android:layout_toLeftOf="@+id/accueil"
+        android:layout_toStartOf="@+id/accueil" />
 </RelativeLayout>
