@@ -12,7 +12,6 @@ public class Splash extends Activity {
     private static String TAG = Splash.class.getName();
     private static long SLEEP_TIME = 3;    // Sleep for some time
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,21 +39,22 @@ public class Splash extends Activity {
                 Log.e(TAG, e.getMessage());
             }
 
-//            // Suivant le questionnaire on choisit de rentrer ou non sur la page d'accueil.
-//            int reponseCorrecte;
-//
-//            // On récupère notre ressource au format int.
-//          reponseCorrecte = getResources().getInteger(R.xml.);
-//        if (reponseCorrecte == 1) {
+            // Suivant le questionnaire on choisit de rentrer ou non sur la page d'accueil.
+            int reponseCorrecte;
+
+
+            // On récupère notre ressource au format int.
+ //         reponseCorrecte = getResources().getInteger(R.integer.reponseEntree);
+   //     if (reponseCorrecte == 1) {
               Intent intent = new Intent(Splash.this, MainActivity.class);
               Splash.this.startActivity(intent);
               Splash.this.finish();
-//            }
-//            else {
-//                Intent intent = new Intent(Splash.this, QuestionnaireEntree.class);
-//                Splash.this.startActivity(intent);
-//                Splash.this.finish();
-//            }
+     //       }
+       //     else {
+         //       Intent intent = new Intent(Splash.this, reponseQuestionnaire.class);
+           //     Splash.this.startActivity(intent);
+             //   Splash.this.finish();
+         //   }
        }
     }
 }

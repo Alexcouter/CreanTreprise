@@ -1,6 +1,8 @@
 package com.example.creantreprise;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,12 +16,14 @@ public class reponseQuestionnaire extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reponse_questionnaire);
-
+        //Desinstallation
         final Button ok = (Button) findViewById(R.id.okreponse);
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Uri packageURI = Uri.parse("package:com.android.creantreprise");
+                Intent uninstallIntent = new Intent(Intent.ACTION_DELETE, packageURI);
+                startActivity(uninstallIntent);
             }
         });
     }

@@ -24,5 +24,7 @@
     <string name="ok">Ok</string>
     <string name="Voir">Voir</string>
     <string name="titre_eurl">Entreprise unipersonnelle à responsabilité limitée</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>

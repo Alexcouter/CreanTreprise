@@ -8,6 +8,7 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -43,16 +44,28 @@
             android:label="@string/title_activity_entreprise_ind" >
         </activity>
         <activity
-            android:name=".Eurl"
-            android:label="@string/title_activity_eurl" >
+            android:name=".Sas"
+            android:label="@string/title_activity_sas" >
         </activity>
         <activity
             android:name=".Sarl"
-            android:label="@string/title_activity_sarl" >
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_sarl"
+            android:parentActivityName=".ChoixStatut"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.creantreprise.ChoixStatut" />
         </activity>
         <activity
-            android:name=".Sas"
-            android:label="@string/title_activity_sas" >
+            android:name=".Eurl"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_eurl"
+            android:parentActivityName=".ChoixStatut"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.creantreprise.ChoixStatut" />
         </activity>
     </application>
 
