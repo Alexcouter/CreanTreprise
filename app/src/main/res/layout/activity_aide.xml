@@ -7,7 +7,7 @@
     tools:context="com.example.creantreprise.Aide"
     android:background="#33b5e5">
     <Button
-        android:id="@+id/accueilInstitution"
+        android:id="@+id/activity_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -25,30 +25,31 @@
         android:textSize="30sp"
         android:gravity="center_horizontal"
         android:id="@+id/titreAide"
+        android:textColor="#FFFFFF"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/accueilInstitution"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="44dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/activity_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ampoule"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/accueilInstitution"
         android:contentDescription="logoAide"
         android:src="@drawable/ampoule"
-        android:layout_above="@+id/titreAide" />
+        android:layout_above="@+id/titreAide"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_alignTop="@+id/activity_main" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
         android:text="TEST TES TESt"
         android:id="@+id/textView3"
+        android:layout_marginTop="41dp"
         android:layout_below="@+id/titreAide"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp" />
+        android:layout_toLeftOf="@+id/activity_main"
+        android:layout_toStartOf="@+id/activity_main" />
 </RelativeLayout>
