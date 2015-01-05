@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
         final Button quitter = (Button) findViewById(R.id.quitterbouton);
         final Button institutions = (Button) findViewById(R.id.InstJuriMay);
         final Button statut = (Button) findViewById(R.id.statutJ);
+        final Button bilan = (Button) findViewById(R.id.creaBilan);
 
         final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
@@ -58,6 +59,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),ChoixStatut.class);
+                startActivity(i);
+            }
+        });
+
+        bilan.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),affichageBilan.class);
                 startActivity(i);
             }
         });
