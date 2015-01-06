@@ -130,9 +130,13 @@ public class QuestionnaireEntree extends Activity {
                         Intent i = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(i);
                     }
-                } else {
+                }
+                if(!((button3 && button6) || (button3 && button9) || (button3 && button12) || (button6 && button9) || (button6 && button12) || (button9 && button12))){
                     Intent i = new Intent(getApplicationContext(), reponseQuestionnaire.class);
                     startActivity(i);
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), boutonsCoches + "Pensez à cocher toutes les cases", duration).show();
                 }
 
             }
