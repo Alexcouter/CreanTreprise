@@ -1,33 +1,54 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.creantreprise.Eurl"
-    android:background="#33b5e5">
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context="com.example.creantreprise.Eurl">
 
-    <TextView android:text="Entreprise unipersonnelle à responsabilité limitée" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewEurl"
-        android:textSize="40dp" />
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
+        android:text="@string/dummy_content" />
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView3" >
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.example.creantreprise.Eurl"
+            android:background="#33b5e5">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:text="1. Nombre d&apos;associés	Un associé unique 2. Montant de capital social minimum	Capital librement fixé. 20 % des fonds doivent être versés à la création, le reste dans les cinq années suivantes Les règles de fonctionnement	 3. Direction	Le gérant (personne physique), qui peut être soit l&apos;associé unique soit un tiers. 4. Prises de décisions	Le gérant. Ses pouvoirs sont cependant limités s&apos;il n&apos;est pas l&apos;associé unique. 5. Responsabilité du dirigeant	Elle est limitée aux apports, sauf responsabilité civile et pénale en cas de faute de gestion. Le régime fiscal et social	 6. Régime fiscal de l&apos;entreprise et mode d&apos;imposition des bénéfices	Elle est soumise à l&apos;impôt sur le revenu dans la catégorie des BIC (bénéfices industriels et commerciaux) ou des BNC (bénéfices non commerciaux). Option possible pour l&apos;impôt sur les sociétés. 7. Rémunération du dirigeant	Elle n&apos;est pas déductible des bénéfices sauf option pour l&apos;impôt sur les sociétés ou si le gérant est un tiers. 8. Régime social du dirigeant	Si le gérant est l&apos;associé unique : régime des travailleurs non-salariés.? Si le gérant est un tiers : assimilé-salarié"
-        android:textSize="15dp"
-        android:layout_below="@+id/textViewEurl"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+            <TextView android:text="Entreprise unipersonnelle à responsabilité limitée" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewEurl"
+                android:textSize="40dp" />
 
-    </ScrollView>
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView3" >
 
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:text="1. Nombre d&apos;associés	Un associé unique 2. Montant de capital social minimum	Capital librement fixé. 20 % des fonds doivent être versés à la création, le reste dans les cinq années suivantes Les règles de fonctionnement	 3. Direction	Le gérant (personne physique), qui peut être soit l&apos;associé unique soit un tiers. 4. Prises de décisions	Le gérant. Ses pouvoirs sont cependant limités s&apos;il n&apos;est pas l&apos;associé unique. 5. Responsabilité du dirigeant	Elle est limitée aux apports, sauf responsabilité civile et pénale en cas de faute de gestion. Le régime fiscal et social	 6. Régime fiscal de l&apos;entreprise et mode d&apos;imposition des bénéfices	Elle est soumise à l&apos;impôt sur le revenu dans la catégorie des BIC (bénéfices industriels et commerciaux) ou des BNC (bénéfices non commerciaux). Option possible pour l&apos;impôt sur les sociétés. 7. Rémunération du dirigeant	Elle n&apos;est pas déductible des bénéfices sauf option pour l&apos;impôt sur les sociétés ou si le gérant est un tiers. 8. Régime social du dirigeant	Si le gérant est l&apos;associé unique : régime des travailleurs non-salariés.? Si le gérant est un tiers : assimilé-salarié"
+                android:textSize="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewEurl" />
 
-</RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
