@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33b5e5"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/quitterbouton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/aidebouton"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:text="@string/quitter" />
+
+    <Button
+        android:id="@+id/aidebouton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBaseline="@+id/quitterbouton"
+        android:layout_alignBottom="@+id/quitterbouton"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:text="@string/aide"
+        android:layout_alignParentEnd="false" />
+
+    <ImageView
+        android:id="@+id/logoentreprise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quitterbouton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginTop="41dp"
+        android:contentDescription="@string/logo_application"
+        android:src="@drawable/entrepriselogobright" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="@string/creerBilan"
+        android:id="@+id/creaBilan"
+        android:background="@android:color/background_light"
+        android:textSize="25dp"
+        android:layout_above="@+id/btnLL"
+        android:layout_alignLeft="@+id/aidebouton"
+        android:layout_alignStart="@+id/aidebouton"
+        android:layout_alignRight="@+id/quitterbouton"
+        android:layout_alignEnd="@+id/quitterbouton"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:id="@+id/btnLL"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_above="@+id/quitterbouton"
+        android:layout_alignLeft="@+id/aidebouton"
+        android:layout_alignStart="@+id/aidebouton"
+        android:layout_alignRight="@+id/quitterbouton"
+        android:layout_alignEnd="@+id/quitterbouton"
+        android:layout_alignParentBottom="false"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/InstJuriMay"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:layout_marginRight="5dp"
+            android:text="Institutions Juridiques" />
+
+        <Button
+            android:id="@+id/statutJ"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="Statut Juridique"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>
