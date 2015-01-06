@@ -1,33 +1,39 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:background="#0099cc"
-    tools:context="com.example.creantreprise.Sarl">
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.creantreprise.EntrepriseInd"
+    android:background="#33b5e5">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
-    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
-        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
-        android:text="@string/dummy_content" />
+    <TextView android:text="Entreprise individuelle" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEntInd"
+        android:textSize="50dp"
+        android:textColor="@android:color/black" />
 
-    <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
-    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
-
-        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:background="@color/black_overlay" android:orientation="horizontal"
-            tools:ignore="UselessParent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1"
+        android:layout_below="@+id/textViewEntInd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
 
-            <Button android:id="@+id/dummy_button" style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:text="@string/dummy_button" />
 
-        </LinearLayout>
-    </FrameLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:text="L’entreprise individuelle est une forme juridique simple et peu contraignante : vous êtes seul maître à bord et vous n’avez pas de statuts à rédiger.    Seul inconvénient : vos patrimoines individuels et personnels sont juridiquement confondus. En cas de problème, vous serez responsable des dettes de votre entreprise sur l&apos;ensemble de vos biens, y compris sur ceux acquis avec votre conjoint si vous êtes marié. Le choix de votre régime matrimonial doit être pris en considération dans vos démarches.  La loi vous permet cependant de mettre à l&apos;abri vos biens fonciers (votre logement notamment) en procédant à une déclaration d&apos;insaisissabilité devant notaire. Pour qui ? L’entreprise individuelle est particulièrement adaptée aux activités peu risquées, qui ne nécessitent pas d’outils de production par exemple, et peu gourmandes en capitaux (ex. activité de conseil). Votre activité peut être de nature commerciale, artisanale, libérale ou agricole. Quel capital ?  Il n&apos;y a besoin d&apos;aucun capital.  Quelle fiscalité ?  En tant qu&apos;entrepreneur individuel, vous n’avez pas de salaire. Vos bénéfices (votre chiffre d’affaires moins toutes vos charges) constituent votre revenu. Ils sont soumis à l’impôt sur le revenu dans la catégorie correspondant à votre activité : bénéfices industriels et commerciaux (BIC), si vous êtes commerçant ou artisan, ou bénéfices non commerciaux (BNC), si vous êtes profession libérale. Quelles formalités de création ?  Les formalités sont réduites au minimum. Il suffit de déclarer en ligne votre activité, en tant que personne physique, auprès du centre de formalités des entreprises (CFE) : à la chambre de commerce et d&apos;industrie pour les commerçants, à la chambre de métiers et de l&apos;artisanat pour les artisans, au greffe du tribunal de commerce pour les agents commerciaux, ou à l&apos;Urssaf pour les professions libérales."
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textViewEntInd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-</FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -7,7 +7,18 @@
     tools:context="com.example.creantreprise.Sas"
     android:background="#33b5e5">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView android:text="Société par actions simplifiés" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEntInd"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:text="C’est quoi ?  La SAS est la forme juridique qui a le plus progressé ces dernières années. Elle dispose de la structure de la SA, rassurante pour les investisseurs, et de la souplesse de la SARL au niveau de son fonctionnement : absence de capital minimum, très grande liberté statutaire. Ce sont les associés qui décident du fonctionnement et de la répartition du pouvoir au sein de l’entreprise. Pour qui ?  La SAS est la structure idéale pour les créateurs d&apos;entreprises à fort potentiel de développement. Quel capital ?  On peut la créer avec 1 € et 1 associé. Quelle fiscalité ?  La SAS est soumise à l’impôt sur les sociétés, ou sur option, à l’impôt sur le revenu. La société unipersonnelle par actions simplifiées (SASU) est une SAS avec un associé unique. "
+        android:layout_below="@+id/textViewEntInd"
+        android:textSize="15dp" />
 
 </RelativeLayout>

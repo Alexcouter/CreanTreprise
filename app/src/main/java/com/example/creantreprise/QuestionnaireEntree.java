@@ -74,6 +74,7 @@ public class QuestionnaireEntree extends Activity {
                             ) {
                         Intent i = new Intent(getApplicationContext(), reponseQuestionnaire.class);
                         startActivity(i);
+                        finish();
                     }
                 }
                 else {
