@@ -57,39 +57,40 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textColor="@color/background_material_light" />
-
-    <CheckBox
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Travailler pour quelqu&apos;un"
-        android:id="@+id/checkBox"
+        android:id="@+id/q1r1"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq1r1"/>
+                    android:onClick="radioClick1"
+       />
 
-    <CheckBox
+                <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Travailler pour un supérieur hiérarchique"
-        android:id="@+id/checkBox2"
-        android:layout_below="@+id/checkBox"
+        android:id="@+id/q1r2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq1r2"/>
+                    android:onClick="radioClick1"/>
 
-    <CheckBox
+                <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Liberté de gestion et création"
-        android:id="@+id/checkBox3"
+        android:id="@+id/q1r3"
         android:layout_below="@+id/checkBox2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq1r3"/>
+                    android:onClick="radioClick1"/>
+            </RadioGroup>
 
     <TextView
         android:layout_width="wrap_content"
@@ -102,83 +103,85 @@
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView" />
 
-    <CheckBox
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Règles de bonne conduite"
-        android:id="@+id/checkBox4"
+        android:id="@+id/q2r1"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq2r1"/>
+                android:onClick="radioClick2"/>
 
-    <CheckBox
+            <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Service de l&apos;intérêt général"
-        android:id="@+id/checkBox5"
+        android:id="@+id/q2r2"
         android:layout_below="@+id/checkBox4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq2r2"/>
+                android:onClick="radioClick2"/>
 
-    <CheckBox
+            <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Transparence dans votre travail"
-        android:id="@+id/checkBox6"
-        android:layout_below="@+id/checkBox5"
+        android:id="@+id/q2r3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq2r3"/>
+                android:onClick="radioClick2"/>
+            </RadioGroup>
 
-    <TextView
+
+            <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quel type de rémuération préférez-vous ?"
         android:id="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/checkBox6"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <CheckBox
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Salaire fixe"
-        android:id="@+id/checkBox7"
-        android:layout_below="@+id/textView4"
+        android:id="@+id/q3r1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq3r1"/>
+                android:onClick="radioClick3"/>
 
-    <CheckBox
+            <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Salaire fixe selon l&apos;échelon et la fonction"
-        android:id="@+id/checkBox8"
-        android:layout_below="@+id/checkBox7"
+        android:id="@+id/q3r2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq3r2"/>
+                android:onClick="radioClick3"
+        />
 
-    <CheckBox
+            <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Salaire irrégulié car lié à l&apos;activité"
-        android:id="@+id/checkBox9"
-        android:layout_below="@+id/checkBox8"
+        android:id="@+id/q3r3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq3r3"/>
-
+                android:onClick="radioClick3"
+       />
+</RadioGroup>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -186,42 +189,43 @@
         android:id="@+id/textView5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/checkBox9"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <CheckBox
+                <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Emploi moyennement stable"
         android:id="@+id/q4r1"
-        android:layout_below="@+id/textView5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq4r1"/>
+                    android:onClick="radioClick4"
+        />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Emploi stable"
-        android:id="@+id/q4r2"
-        android:layout_below="@+id/checkBox10"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq4r2"/>
+                <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emploi stable"
+            android:id="@+id/q4r2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+                    android:onClick="radioClick4"
+            />
 
-    <CheckBox
+                <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Emploi soumis aux fluctuations des activités"
         android:id="@+id/q4r3"
-        android:layout_below="@+id/checkBox11"
-        android:layout_alignParentLeft="true"
+                    android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:onClick="boutonq4r3"/>
+                    android:onClick="radioClick4"
+        />
+            </RadioGroup>
 
             <Button
                 android:layout_width="wrap_content"
@@ -231,7 +235,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:onClick="boutonQuestionnaire"/>
+                />
 
         </LinearLayout>
 
