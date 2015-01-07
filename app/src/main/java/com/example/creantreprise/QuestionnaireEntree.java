@@ -52,7 +52,7 @@ public class QuestionnaireEntree extends Activity {
 
         //Réponses au questionnaire
 
-        /*boutonSuivant.setOnClickListener(new View.OnClickListener() {
+        boutonSuivant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 boutonsCoches = salarie1 + entrepreneur1 + fonctionnaire1;
@@ -82,70 +82,74 @@ public class QuestionnaireEntree extends Activity {
                     Toast.makeText(getApplicationContext(), boutonsCoches + "Pensez à cocher toutes les cases", duration).show();
 
                 }
-            }*/
-
-        if(q1r1.isChecked()) {
-            button1 = true;
-        }
-        if(q1r2.isChecked()) {
-            button2 = true;
-        }
-        if(q1r3.isChecked()) {
-            button3 = true;
-        }
-        if(q2r1.isChecked()) {
-            button4 = true;
-        }
-        if(q2r2.isChecked()) {
-            button5 = true;
-        }
-        if(q2r3.isChecked()) {
-            button6 = true;
-        }
-        if(q3r1.isChecked()) {
-            button7 = true;
-        }
-        if(q3r2.isChecked()) {
-            button8 = true;
-        }
-        if(q3r3.isChecked()) {
-            button9 = true;
-        }
-        if(q4r1.isChecked()) {
-            button10 = true;
-        }
-        if(q4r2.isChecked()) {
-            button11 = true;
-        }
-        if(q4r3.isChecked()) {
-            button12 = true;
-        }
-
-        boutonSuivant.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                boutonsCoches = salarie1 + entrepreneur1 + fonctionnaire1;
-                if ((button1 || button2 || button3) && (button4 || button5 || button6) && (button7 || button8 || button9) && (button10 || button11 || button12)) {
-                    if ((button3 && button6) || (button3 && button9) || (button3 && button12) || (button6 && button9) || (button6 && button12) || (button9 && button12)) {
-                        Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(i);
-                    }
-                }
-                if(!((button3 && button6) || (button3 && button9) || (button3 && button12) || (button6 && button9) || (button6 && button12) || (button9 && button12))){
-                    Intent i = new Intent(getApplicationContext(), reponseQuestionnaire.class);
-                    startActivity(i);
-                }
-                else {
-                    Toast.makeText(getApplicationContext(), boutonsCoches + "Pensez à cocher toutes les cases", duration).show();
-                }
-
             }
 
 
 
-
-
-
+//        boutonSuivant.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                if(q1r1.isChecked()) {
+//                    button1 = true;
+//                }
+//                if(q1r2.isChecked()) {
+//                    button2 = true;
+//                }
+//                if(q1r3.isChecked()) {
+//                    button3 = true;
+//                }
+//                if(q2r1.isChecked()) {
+//                    button4 = true;
+//                }
+//                if(q2r2.isChecked()) {
+//                    button5 = true;
+//                }
+//                if(q2r3.isChecked()) {
+//                    button6 = true;
+//                }
+//                if(q3r1.isChecked()) {
+//                    button7 = true;
+//                }
+//                if(q3r2.isChecked()) {
+//                    button8 = true;
+//                }
+//                if(q3r3.isChecked()) {
+//                    button9 = true;
+//                }
+//                if(q4r1.isChecked()) {
+//                    button10 = true;
+//                }
+//                if(q4r2.isChecked()) {
+//                    button11 = true;
+//                }
+//                if(q4r3.isChecked()) {
+//                    button12 = true;
+//                }
+//
+//                boutonsCoches = salarie1 + entrepreneur1 + fonctionnaire1;
+//                if ((button1 || button2 || button3) && (button4 || button5 || button6) && (button7 || button8 || button9) && (button10 || button11 || button12)) {
+//                    if ((button3 && button6) || (button3 && button9) || (button3 && button12) || (button6 && button9) || (button6 && button12) || (button9 && button12)) {
+//                        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+//                        startActivity(i);
+//                    }
+//                    if(!((button3 && button6) || (button3 && button9) || (button3 && button12) || (button6 && button9) || (button6 && button12) || (button9 && button12))){
+//                        Intent i = new Intent(getApplicationContext(), reponseQuestionnaire.class);
+//                        startActivity(i);
+//                    }
+//                }
+//
+//                else {
+//                    Toast.makeText(getApplicationContext(), boutonsCoches + "Pensez à cocher toutes les cases", duration).show();
+//                }
+//
+//            }
+//
+//
+//
+//
+//
+//
         });
 
 

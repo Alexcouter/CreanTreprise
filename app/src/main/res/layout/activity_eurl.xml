@@ -27,23 +27,28 @@
             <TextView android:text="Entreprise unipersonnelle à responsabilité limitée" android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewEurl"
-                android:textSize="40dp" />
+                android:textSize="40dp"
+                android:textColor="@android:color/black" />
 
             <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/scrollView3" >
+                android:id="@+id/scrollView3"
+                android:layout_below="@+id/textViewEurl"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
+                android:id="@+id/tvEurl"
                 android:text="1. Nombre d&apos;associés	Un associé unique 2. Montant de capital social minimum	Capital librement fixé. 20 % des fonds doivent être versés à la création, le reste dans les cinq années suivantes Les règles de fonctionnement	 3. Direction	Le gérant (personne physique), qui peut être soit l&apos;associé unique soit un tiers. 4. Prises de décisions	Le gérant. Ses pouvoirs sont cependant limités s&apos;il n&apos;est pas l&apos;associé unique. 5. Responsabilité du dirigeant	Elle est limitée aux apports, sauf responsabilité civile et pénale en cas de faute de gestion. Le régime fiscal et social	 6. Régime fiscal de l&apos;entreprise et mode d&apos;imposition des bénéfices	Elle est soumise à l&apos;impôt sur le revenu dans la catégorie des BIC (bénéfices industriels et commerciaux) ou des BNC (bénéfices non commerciaux). Option possible pour l&apos;impôt sur les sociétés. 7. Rémunération du dirigeant	Elle n&apos;est pas déductible des bénéfices sauf option pour l&apos;impôt sur les sociétés ou si le gérant est un tiers. 8. Régime social du dirigeant	Si le gérant est l&apos;associé unique : régime des travailleurs non-salariés.? Si le gérant est un tiers : assimilé-salarié"
                 android:textSize="15dp"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/textViewEurl" />
+                android:layout_below="@+id/textViewEurl"
+                android:textColor="@android:color/black" />
 
             </ScrollView>
 

@@ -14,8 +14,8 @@
         android:layout_marginBottom="20dp"
         android:layout_marginRight="20dp"
         android:layout_toRightOf="@+id/aidebouton"
-        android:background="@color/background_material_light"
-        android:backgroundTint="@color/background_material_light"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
         android:text="@string/quitter" />
 
     <Button
