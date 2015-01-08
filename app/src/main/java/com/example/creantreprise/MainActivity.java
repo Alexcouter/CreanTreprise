@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
         final Button statut = (Button) findViewById(R.id.statutJ);
         final Button bilan = (Button) findViewById(R.id.creaBilan);
 
+
         final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
         logo.startAnimation(fadeInAnimation);
@@ -67,7 +68,7 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),affichageBilan.class);
+                Intent i = new Intent(getApplicationContext(),CreationBilan.class);
                 startActivity(i);
             }
         });
