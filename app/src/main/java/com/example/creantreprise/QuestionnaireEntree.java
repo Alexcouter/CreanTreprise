@@ -3,6 +3,7 @@ package com.example.creantreprise;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,15 +14,20 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 //import android.view.animation.AnimationSet;
 
 
 public class QuestionnaireEntree extends Activity {
     int duration = Toast.LENGTH_SHORT;
     int fonctionnaire, entrepreneur, salarie = 0;
+    DBHelper bdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        bdd = new DBHelper(this);
+        ArrayList array_list = bdd.getAllUser();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questionnaire_entree);
 
@@ -81,7 +87,7 @@ public class QuestionnaireEntree extends Activity {
                     entrepreneur++;
                 }
                 if(q3r1.isChecked()) {
-salarie++;
+                    salarie++;
                 }
                 if(q3r2.isChecked()) {
                     fonctionnaire++;
@@ -101,10 +107,16 @@ salarie++;
                     Log.i("Ca passe la", "");
                     //Le problème est ici
                     if (entrepreneur >= 2) {
+                        int type = 1;
+                        Bundle dataBundle = new Bundle();
+                        dataBundle.putInt("type", type);
                         Log.i("Lance accueil", "");
                         QuestionnaireEntree.this.startActivity(i1);
                     }
                     else {
+                        int type = 2;
+                        Bundle dataBundle = new Bundle();
+                        dataBundle.putInt("type", type);
                         Log.i("Lance le reste", "");
                         QuestionnaireEntree.this.startActivity(i2);
                         finish();
