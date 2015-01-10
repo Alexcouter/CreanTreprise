@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.creantreprise.reponse5"
+    android:background="@color/bleuAppli">
+
+    <TextView android:text=
+     "La structure la mieux adaptée à votre projet semble être la SARL (société à responsabilité limitée).
+     Elle vous permettra de protéger votre patrimoine personnel à venir ainsi que celui de vos associés.
+     C&apos;est une structure susceptible de s&apos;adapter à de nombreuses situations.
+     Les règles de fonctionnement de la société sont régies en grande partie par le code du commerce.
+     La rédaction des statuts ne présente donc pas de grandes difficultés. Seuls quelques points particuliers doivent faire l&apos;objet d&apos;une attention particulière (modalités de cession de parts sociales notamment et conséquences du décès d&apos;un associé).
+     Le montant du capital social est déterminé librement par les associés, en fonction de la taille, de l&apos;activité et des besoins en capitaux de l&apos;entreprise. Les apports en espèces peuvent cependant être libérés sur 5 ans avec un versement initial minimal de 20 % de leur montant."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewreponse5"
+        android:textColor="#ff000000" />
+
+</RelativeLayout>

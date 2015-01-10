@@ -68,10 +68,34 @@
             android:name=".affichageBilan"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_affichagebilan"
-            android:parentActivityName=".affichageBilan">
+            android:parentActivityName=".affichageBilan" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.creantreprise.ChoixStatut" />
+        </activity>
+        <activity
+            android:name=".reponseQuestionnaire2"
+            android:label="@string/title_activity_reponse_questionnaire2" >
+        </activity>
+        <activity
+            android:name=".reponse1"
+            android:label="@string/title_activity_reponse1" >
+        </activity>
+        <activity
+            android:name=".reponse2"
+            android:label="@string/title_activity_reponse2" >
+        </activity>
+        <activity
+            android:name=".reponse3"
+            android:label="@string/title_activity_reponse3" >
+        </activity>
+        <activity
+            android:name=".reponse4"
+            android:label="@string/title_activity_reponse4" >
+        </activity>
+        <activity
+            android:name=".reponse5"
+            android:label="@string/title_activity_reponse5" >
         </activity>
     </application>
 

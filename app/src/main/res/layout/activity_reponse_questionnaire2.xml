@@ -1,0 +1,255 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.creantreprise.reponseQuestionnaire2"
+    android:background="@color/bleuAppli">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1"
+            android:id="@+id/linearLayout1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Choix du statut"
+                android:id="@+id/questionnaireentree"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="vous avez le profil d&apos;un entrepreneur, ce deuxième questionnaire a pour but de vosu orienter dans votre choix du statut juridique de votre entreprise"
+                android:id="@+id/questionnairedesc2"
+                android:textColor="#FFFFFF"
+                android:layout_weight="0.03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Souhaitez-vous créer votre entreprise:"
+                android:id="@+id/textView1"
+                android:layout_below="@+id/scrollView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/background_material_light" />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+             >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seul"
+                    android:id="@+id/bq1r1"
+                    android:layout_below="@+id/textView1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick1"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="à plusieurs"
+                    android:id="@+id/bq1r2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick1"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dans quel but ?"
+                android:id="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/checkBox3"
+                android:textColor="#FFFFFF"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_alignEnd="@+id/textView1" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="de gagner de l&apos;argent"
+                    android:id="@+id/bq2r1"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick2"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dans un but non lucratif"
+                    android:id="@+id/bq2r2"
+                    android:layout_below="@+id/checkBox4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick2"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Votre activité nécessite-t-elle des investissements importants ?"
+                android:id="@+id/textView4"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="oui"
+                    android:id="@+id/bq3r1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick3"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="non"
+                    android:id="@+id/bq3r2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick3"
+                    android:checked="false" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="s&apos;agit-il d&apos;une activité libérale ?"
+                android:id="@+id/textView5"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="oui"
+                    android:id="@+id/bq4r1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick4"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="non"
+                    android:id="@+id/bq4r2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick4"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avez-vous un patrimoine à protéger ?"
+                android:id="@+id/textView5"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="oui"
+                    android:id="@+id/bq4r1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick4"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="non"
+                    android:id="@+id/bq4r2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="radioClick4"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suivant"
+                android:id="@+id/Questionnaire2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
