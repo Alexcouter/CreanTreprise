@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Pierre\AndroidstudioProjects\CreanTreprise\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
+        jar="C:\Users\Pierre\.AndroidStudio\Projects\CreanTreprise\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
         jumboMode="false"
-        revision="20.0.0"
+        revision="21.1.2"
         sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
-        <dex dex="C:\Users\Pierre\AndroidstudioProjects\CreanTreprise\app\build\intermediates\pre-dexed\debug\classes-6c460ed1eb84a86c20518ae34ba4c7a92b61eadb.jar" />
+        <dex dex="C:\Users\Pierre\.AndroidStudio\Projects\CreanTreprise\app\build\intermediates\pre-dexed\debug\classes-4a1d0e5fb92d0e3d4e2130ed74db04f56d131081.jar" />
     </item>
     <item
-        jar="C:\Users\Pierre\AndroidstudioProjects\CreanTreprise\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jar="C:\Users\Pierre\.AndroidStudio\Projects\CreanTreprise\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="C:\Users\Pierre\AndroidstudioProjects\CreanTreprise\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-3df208a2df1b134fee0919243d4c64933e4dce9f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Pierre\AndroidstudioProjects\CreanTreprise\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
+        revision="21.1.2"
         sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="C:\Users\Pierre\AndroidstudioProjects\CreanTreprise\app\build\intermediates\pre-dexed\debug\classes-c0c4c00a2e71c5c43556a51aaf45ebe19ca0b3f6.jar" />
+        <dex dex="C:\Users\Pierre\.AndroidStudio\Projects\CreanTreprise\app\build\intermediates\pre-dexed\debug\classes-ba2d43cd44b18f0217057435c539024945a07aef.jar" />
     </item>
     <item
-        jar="C:\Users\Pierre\android-sdks\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jar="C:\Users\Pierre\.AndroidStudio\Projects\CreanTreprise\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
         jumboMode="false"
-        revision="20.0.0"
+        revision="21.1.2"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="C:\Users\Pierre\.AndroidStudio\Projects\CreanTreprise\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-ce95b07f73cfe98d6bffa930a215f0693f45bdde.jar" />
+    </item>
+    <item
+        jar="F:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
         sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="C:\Users\Pierre\AndroidstudioProjects\CreanTreprise\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-7eeb0c4a6d0225348fdc893d378388da69f4c061.jar" />
+        <dex dex="C:\Users\Pierre\.AndroidStudio\Projects\CreanTreprise\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-163ce0ba6dd7d4554e6efeaaf69fdb672a980714.jar" />
     </item>
 
 </items>

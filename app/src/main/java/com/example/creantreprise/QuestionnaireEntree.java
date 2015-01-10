@@ -2,6 +2,7 @@ package com.example.creantreprise;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -32,6 +33,8 @@ public class QuestionnaireEntree extends Activity {
 
         questionnaireentree.startAnimation(fadeInAnimation);
 
+        SharedPreferences settings = getApplicationContext().getSharedPreferences("Donnees_User", 0);
+    final    SharedPreferences.Editor editor = settings.edit();
 
         final RadioButton q1r1 = (RadioButton) findViewById(R.id.q1r1);
         final RadioButton q1r2 = (RadioButton) findViewById(R.id.q1r2);

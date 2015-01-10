@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Quel niveau d'indépendance préférez-vous?"
-        android:id="@+id/textView1"
+        android:id="@+id/textView"
         android:layout_below="@+id/scrollView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:text="Travailler pour quelqu&apos;un"
         android:id="@+id/q1r1"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
                     android:onClick="radioClick1"
@@ -100,8 +100,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/checkBox3"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_alignEnd="@+id/textView1" />
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
 
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
