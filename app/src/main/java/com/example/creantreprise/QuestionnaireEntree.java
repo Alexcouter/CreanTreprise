@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -16,11 +17,7 @@ import android.widget.Toast;
 
 
 public class QuestionnaireEntree extends Activity {
-    int salarie1 = 0,fonctionnaire1 = 0,entrepreneur1 = 0;
-    //CharSequence messageErreur = "Vous avez déjà coché une case";
     int duration = Toast.LENGTH_SHORT;
-    int boutonsCoches = 0;
-    boolean button1,button2,button3,button4,button5,button6,button7,button8,button9,button10,button11,button12 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +25,11 @@ public class QuestionnaireEntree extends Activity {
         setContentView(R.layout.activity_questionnaire_entree);
 
         TextView questionnaireentree = (TextView)findViewById(R.id.questionnaireentree);
-
+        final Intent i1 = new Intent(getApplicationContext(), MainActivity.class);
+        final Intent i2 = new Intent(getApplicationContext(), reponseQuestionnaire.class);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
 
         questionnaireentree.startAnimation(fadeInAnimation);
-
-        SharedPreferences settings = getApplicationContext().getSharedPreferences("Donnees_User", 0);
-    final    SharedPreferences.Editor editor = settings.edit();
 
         final RadioButton q1r1 = (RadioButton) findViewById(R.id.q1r1);
         final RadioButton q1r2 = (RadioButton) findViewById(R.id.q1r2);
@@ -55,31 +50,36 @@ public class QuestionnaireEntree extends Activity {
         boutonSuivant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boutonsCoches = salarie1 + entrepreneur1 + fonctionnaire1;
-                if((q1r1.isChecked() || q1r2.isChecked() || q1r3.isChecked())
+
+                Log.i("Ca passe ici", "MyClass.getView() — get item number ");
+                if(((q1r1.isChecked() || q1r2.isChecked() || q1r3.isChecked())
                         &&
                         (q2r1.isChecked() || q2r2.isChecked() || q2r3.isChecked())
                         &&
                         (q3r1.isChecked() || q3r2.isChecked() || q3r3.isChecked())
                         &&
-                        (q4r1.isChecked() || q4r2.isChecked() || q4r3.isChecked())){
-                    if ((q1r3.isChecked()&& q2r3.isChecked() ) || (q1r3.isChecked() && q3r3.isChecked()) ||
+                        (q4r1.isChecked() || q4r2.isChecked() || q4r3.isChecked())))
+                {
+                    Log.i("Ca passe la", "");
+                    //Le problème est ici
+                    if (((q1r3.isChecked() && q2r3.isChecked()) || (q1r3.isChecked() && q3r3.isChecked()) ||
                             (q1r3.isChecked() && q4r3.isChecked()) || (q2r3.isChecked() && q3r3.isChecked()) ||
                             (q2r3.isChecked() && q4r3.isChecked()) || (q3r3.isChecked() && q4r3.isChecked())
-                            ) {
-                        Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(i);
+                    )) {
+                        Log.i("Lance accueil", "");
+                        startActivity(i1);
                     }
-                    if ((q1r2.isChecked()&& q2r2.isChecked() && q3r2.isChecked() ) || (q1r2.isChecked() && q4r2.isChecked() && q2r2.isChecked()) ||
+                    else if (((q1r2.isChecked() && q2r2.isChecked() && q3r2.isChecked()) || (q1r2.isChecked() && q4r2.isChecked() && q2r2.isChecked()) ||
                             (q1r2.isChecked() && q3r2.isChecked() && q4r2.isChecked()) || (q2r2.isChecked() && q3r3.isChecked() && q4r2.isChecked())
-                            ) {
-                        Intent i = new Intent(getApplicationContext(), reponseQuestionnaire.class);
-                        startActivity(i);
+                    )) {
+                        Log.i("Lance le reste", "");
+                        startActivity(i2);
                         finish();
                     }
                 }
                 else {
-                    Toast.makeText(getApplicationContext(), boutonsCoches + "Pensez à cocher toutes les cases", duration).show();
+                    Log.i("Ca passe toast", "MyClass.getView() — get item number ");
+                    Toast.makeText(getApplicationContext(),"Pensez à cocher toutes les cases", duration).show();
 
                 }
             }
@@ -128,12 +128,12 @@ public class QuestionnaireEntree extends Activity {
 //                }
 //
 //                boutonsCoches = salarie1 + entrepreneur1 + fonctionnaire1;
-//                if ((button1 || button2 || button3) && (button4 || button5 || button6) && (button7 || button8 || button9) && (button10 || button11 || button12)) {
-//                    if ((button3 && button6) || (button3 && button9) || (button3 && button12) || (button6 && button9) || (button6 && button12) || (button9 && button12)) {
+//                if (((button1 || button2 || button3) && (button4 || button5 || button6) && (button7 || button8 || button9) && (button10 || button11 || button12)) == true) {
+//                    if (((button3 && button6) || (button3 && button9) || (button3 && button12) || (button6 && button9) || (button6 && button12) || (button9 && button12)) == true) {
 //                        Intent i = new Intent(getApplicationContext(), MainActivity.class);
 //                        startActivity(i);
 //                    }
-//                    if(!((button3 && button6) || (button3 && button9) || (button3 && button12) || (button6 && button9) || (button6 && button12) || (button9 && button12))){
+//                    else if(((button3 && button6) || (button3 && button9) || (button3 && button12) || (button6 && button9) || (button6 && button12) || (button9 && button12))== false ){
 //                        Intent i = new Intent(getApplicationContext(), reponseQuestionnaire.class);
 //                        startActivity(i);
 //                    }
@@ -148,16 +148,12 @@ public class QuestionnaireEntree extends Activity {
 //
 //
 //
-//
-//
+
+
         });
 
-
-
-
-
     }
-    //Verification des réponses
+
 
 
 }
