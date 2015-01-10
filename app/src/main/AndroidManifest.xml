@@ -50,8 +50,7 @@
             android:name=".Sarl"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_sarl"
-            android:parentActivityName=".ChoixStatut"
-            android:theme="@style/FullscreenTheme" >
+            android:parentActivityName=".ChoixStatut" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.creantreprise.ChoixStatut" />
@@ -60,8 +59,7 @@
             android:name=".Eurl"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_eurl"
-            android:parentActivityName=".ChoixStatut"
-            android:theme="@style/FullscreenTheme" >
+            android:parentActivityName=".ChoixStatut" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.creantreprise.ChoixStatut" />
@@ -70,8 +68,7 @@
             android:name=".affichageBilan"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_affichagebilan"
-            android:parentActivityName=".affichageBilan"
-            android:theme="@style/FullscreenTheme" >
+            android:parentActivityName=".affichageBilan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.creantreprise.ChoixStatut" />

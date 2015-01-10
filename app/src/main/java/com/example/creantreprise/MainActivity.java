@@ -55,23 +55,23 @@ public class MainActivity extends Activity {
 
         //Bouton choix statut
 
-        statut.setOnClickListener(new View.OnClickListener() {
+//        statut.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getApplicationContext(),ChoixStatut.class);
+//                startActivity(i);
+//            }
+//        });
 
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),ChoixStatut.class);
-                startActivity(i);
-            }
-        });
-
-        bilan.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),CreationBilan.class);
-                startActivity(i);
-            }
-        });
+//        bilan.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getApplicationContext(),CreationBilan.class);
+//                startActivity(i);
+//            }
+//        });
 
 
     }
