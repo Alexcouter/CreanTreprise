@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 public class QuestionnaireEntree extends Activity {
     int duration = Toast.LENGTH_SHORT;
+    int fonctionnaire, entrepreneur, salarie = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +26,8 @@ public class QuestionnaireEntree extends Activity {
         setContentView(R.layout.activity_questionnaire_entree);
 
         TextView questionnaireentree = (TextView)findViewById(R.id.questionnaireentree);
-        final Intent i1 = new Intent(getApplicationContext(), MainActivity.class);
-        final Intent i2 = new Intent(getApplicationContext(), reponseQuestionnaire.class);
+        final Intent i1 = new Intent(QuestionnaireEntree.this, MainActivity.class);
+        final Intent i2 = new Intent(QuestionnaireEntree.this, reponseQuestionnaire.class);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
 
         questionnaireentree.startAnimation(fadeInAnimation);
@@ -60,20 +61,52 @@ public class QuestionnaireEntree extends Activity {
                         &&
                         (q4r1.isChecked() || q4r2.isChecked() || q4r3.isChecked())))
                 {
+
+                                    if(q1r1.isChecked()) {
+                    salarie++;
+                }
+                if(q1r2.isChecked()) {
+                    fonctionnaire++;
+                }
+                if(q1r3.isChecked()) {
+                    entrepreneur++;
+                }
+                if(q2r1.isChecked()) {
+                    salarie++;
+                }
+                if(q2r2.isChecked()) {
+                    fonctionnaire++;
+                }
+                if(q2r3.isChecked()) {
+                    entrepreneur++;
+                }
+                if(q3r1.isChecked()) {
+salarie++;
+                }
+                if(q3r2.isChecked()) {
+                    fonctionnaire++;
+                }
+                if(q3r3.isChecked()) {
+                    entrepreneur++;
+                }
+                if(q4r1.isChecked()) {
+                    salarie++;
+                }
+                if(q4r2.isChecked()) {
+                    fonctionnaire++;
+                }
+                if(q4r3.isChecked()) {
+                    entrepreneur++;
+                }
                     Log.i("Ca passe la", "");
                     //Le problème est ici
-                    if (((q1r3.isChecked() && q2r3.isChecked()) || (q1r3.isChecked() && q3r3.isChecked()) ||
-                            (q1r3.isChecked() && q4r3.isChecked()) || (q2r3.isChecked() && q3r3.isChecked()) ||
-                            (q2r3.isChecked() && q4r3.isChecked()) || (q3r3.isChecked() && q4r3.isChecked())
-                    )) {
+                    if (entrepreneur >= 2) {
                         Log.i("Lance accueil", "");
-                        startActivity(i1);
+                        QuestionnaireEntree.this.startActivity(i1);
                     }
-                    else if (((q1r2.isChecked() && q2r2.isChecked() && q3r2.isChecked()) || (q1r2.isChecked() && q4r2.isChecked() && q2r2.isChecked()) ||
-                            (q1r2.isChecked() && q3r2.isChecked() && q4r2.isChecked()) || (q2r2.isChecked() && q3r3.isChecked() && q4r2.isChecked())
-                    )) {
+                    else {
                         Log.i("Lance le reste", "");
-                        startActivity(i2);
+                        QuestionnaireEntree.this.startActivity(i2);
                         finish();
                     }
                 }

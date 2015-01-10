@@ -30,6 +30,13 @@
             android:name=".QuestionnaireEntree"
             android:label="@string/title_activity_questionnaire_entree" >
         </activity>
+
+        <activity
+            android:name=".reponseQuestionnaire"
+            android:label="ReponseQuestionnaire" >
+        </activity>
+
+
         <activity
             android:name=".institutionsMayenne"
             android:label="Institutions en mayenne" >
