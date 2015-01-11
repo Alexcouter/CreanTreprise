@@ -11,7 +11,11 @@
 Ce type de structure vous permettra de protéger votre patrimoine personnel, de bénéficier d'un régime fiscal avantageux et de prétendre, le cas échéant à des subventions publiques." android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textviewreponse1"
-        android:textColor="#ff000000" />
+        android:textColor="#ff000000"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="128dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -21,5 +25,17 @@ Ce type de structure vous permettra de protéger votre patrimoine personnel, de 
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASSOCIATION"
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textviewreponse1"
+        android:layout_alignEnd="@+id/textviewreponse1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size" />
 
 </RelativeLayout>

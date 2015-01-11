@@ -7,13 +7,13 @@
     tools:context="com.example.creantreprise.reponse2"
     android:background="@color/bleuAppli">
 
-    <TextView android:text="Orientez votre choix vers la création d&apos;une société unipersonnelle : - l&apos;EURL (Entreprise unipersonnelle à responsabilité limitée) - ou la SASU (Société par actions simplifiée unipersonnelle).
-      Bien qu&apos;étant le seul associé de votre société, ces structures vous permettront de limiter votre responsabilité à vos apports, mais en contrepartie vous devrez : - vous soumettre au formalisme lié au fonctionnement d&apos;une société, - supporter des frais de constitution plus élevés que dans le cas d&apos;une entreprise individuelle.
-      La SASU sera particulièrement adaptée si votre entreprise est susceptible de croître rapidement. Bénéficiant d&apos;une grande souplesse de fonctionnement, elle vous permettra d&apos;aménager librement les conditions d&apos;entrée et de sortie de vos futurs associés.  La rédaction des statuts d&apos;une SASU nécessite de ce fait généralement les conseils d&apos;un expert.
-      Si vous exercez une profession libérale réglementée (médecin, architecte, géomètre...), vous devrez choisir une société adaptée aux exigences de votre activité : une SEL (société d&apos;exercice libéral). Renseignez-vous auprès de votre ordre professionnel qui vous apportera tous renseignements utiles sur les règles de constitution spécifiques à votre activité." android:layout_width="wrap_content"
+    <TextView android:text="Orientez votre choix vers la création d&apos;une société unipersonnelle : - l&apos;EURL (Entreprise unipersonnelle à responsabilité limitée) - ou la SASU (Société par actions simplifiée unipersonnelle).       Bien qu&apos;étant le seul associé de votre société, ces structures vous permettront de limiter votre responsabilité à vos apports, mais en contrepartie vous devrez : - vous soumettre au formalisme lié au fonctionnement d&apos;une société, - supporter des frais de constitution plus élevés que dans le cas d&apos;une entreprise individuelle.       La SASU sera particulièrement adaptée si votre entreprise est susceptible de croître rapidement. Bénéficiant d&apos;une grande souplesse de fonctionnement, elle vous permettra d&apos;aménager librement les conditions d&apos;entrée et de sortie de vos futurs associés.  La rédaction des statuts d&apos;une SASU nécessite de ce fait généralement les conseils d&apos;un expert." android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textviewreponse2"
-        android:textColor="#ff000000" />
+        android:textColor="#ff000000"
+        android:layout_above="@+id/suivant2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -23,5 +23,18 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EURL OU SASU"
+        android:id="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textviewreponse2"
+        android:layout_alignEnd="@+id/textviewreponse2"
+        android:layout_above="@+id/textviewreponse2"
+        android:textSize="@dimen/abc_action_bar_default_height_material" />
 
 </RelativeLayout>
