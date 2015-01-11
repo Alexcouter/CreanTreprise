@@ -29,7 +29,7 @@ public class institutionsMayenne extends Activity {
         entreprendreLien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://www.reseau-entreprendre-mayenne.fr/")));
+                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://www.annuaires.justice.gouv.fr/cdad-12163/cdad-de-la-mayenne-25340.html")));
             }
 
         });
@@ -37,7 +37,7 @@ public class institutionsMayenne extends Activity {
         initiativeLien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://www.initiative-mayenne.fr/")));
+                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://www.greffe-tc-laval.fr/")));
             }
 
         });
@@ -45,7 +45,7 @@ public class institutionsMayenne extends Activity {
         creationRepriseLien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://www.creation-reprise53.com/")));
+                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://www.reseau-entreprendre-mayenne.fr/")));
             }
 
         });

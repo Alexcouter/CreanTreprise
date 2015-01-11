@@ -64,7 +64,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reseau entreprendre Mayenne"
+            android:text=" Conseil départemental d’accès au droit"
             android:paddingTop="@dimen/activity_horizontal_margin"
             android:textSize="15sp"
             android:id="@+id/entreprendreMayenne"
@@ -76,7 +76,7 @@
         <TextView
                 android:layout_width="352dp"
                 android:layout_height="wrap_content"
-                android:text="La mission de Réseau Entreprendre Mayenne est de contribuer à la réussite de nouveaux entrepreneurs significativement créateurs d'emplois et de richesses."
+                android:text="Ils assurent, par le biais d’un assistant de justice, juriste, des permanences d’informations et d’orientations juridiques, le mercredi au contrat urbain de cohésion sociale de l’agglomération lavalloise de 10 h à 12 h et de 14 h à 17 h à la maison des services publics de saint Nicolas."
                 android:textSize="10sp"
                 android:id="@+id/entreprendreMayennetxt"
             android:layout_below="@+id/entreprendreMayenne"
@@ -95,14 +95,14 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
-            android:text="Cliquez pour accéder à leur site" />
+            android:text="informations complémentaires" />
         />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Initiative Mayenne"
+            android:text="Tribunal de commerce de Laval"
             android:paddingTop="@dimen/activity_horizontal_margin"
             android:textSize="15sp"
             android:id="@+id/initiativeMayenne"
@@ -110,9 +110,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="- 1er réseau associatif de financement des créateurs d'entreprise
-            - 230 plateformes d'accompagnement dans toute la France
-            - 6 565 entreprises et 39 538 emplois créés ou maintenus en 2013"
+            android:text="Les tribunaux de commerce (T.C.) tranchent les litiges entre commerçants ou entre associés de sociétés commerciales, et ceux qui portent sur les actes de commerce et des défaillances d’entreprises commerciales ou artisanales : sauvegarde, redressement, liquidation judiciaire..."
             android:textSize="10sp"
             android:id="@+id/initiativeMayennetxt"
             android:layout_marginRight="20dp"
@@ -129,7 +127,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
-            android:text="Cliquez pour accéder à leur site" />
+            android:text="Informations complémentaires" />
         />
         />
 
@@ -137,7 +135,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Creation-reprise"
+            android:text="Reseau entreprendre Mayenne"
             android:paddingTop="@dimen/activity_horizontal_margin"
             android:textSize="15sp"
             android:id="@+id/creationReprise"
@@ -145,7 +143,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Objectif : valoriser le goût d’entreprendre pour favoriser l’émergence de projets, faciliter la création et la transmission sur le département et regrouper tous les partenaires mayennais autour de la création-reprise d’entreprise."
+            android:text="Notre mission est de contribuer à la réussite de nouveaux entrepreneurs significativement créateurs d'emplois et de richesses."
             android:textSize="10sp"
             android:id="@+id/creationReprisetxt"
             android:layout_marginRight="20dp"
@@ -162,7 +160,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
-            android:text="Cliquez pour accéder à leur site" />
+            android:text="Informations complémentaires" />
         />
         />
 
