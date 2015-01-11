@@ -38,15 +38,16 @@
         android:contentDescription="logoAide"
         android:src="@drawable/ampoule"
         android:layout_above="@+id/titreAide"
-        android:layout_toLeftOf="@+id/textView3"
         android:layout_toStartOf="@+id/textView3"
-        android:layout_alignTop="@+id/accueil" />
+        android:layout_alignTop="@+id/accueil"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_toLeftOf="@+id/titreAide" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#FFFFFF"
-        android:text="A finir"
+        android:text="Cette application a pour but d'aider à la création de votre entreprise. Vous pouvez notamment accéder à différentes institutions juridiques présentes en Mayenne via le bouton 'Institutions juridiques' présent sur la page principale de l'application. Vous pouvez aussi accéder aux différents statuts juridiques existants via le bouton 'Statuts juridiques'"
         android:id="@+id/textView3"
         android:layout_marginTop="39dp"
         android:layout_below="@+id/titreAide"
