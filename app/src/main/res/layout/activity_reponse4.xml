@@ -13,9 +13,18 @@
      une SEL (société d&apos;exercice libéral) :
      - à responsabilité limitée (SELARL)
      - ou à forme anonyme (SELAFA)
-     Renseignez-vous auprès de votre ordre professionnel qui vous apportera tous renseignements utiles sur ce type de société.   Haut de page " android:layout_width="wrap_content"
+     Renseignez-vous auprès de votre ordre professionnel qui vous apportera tous renseignements utiles sur ce type de société." android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textviewreponse4"
         android:textColor="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        android:id="@+id/suivant4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
 
 </RelativeLayout>

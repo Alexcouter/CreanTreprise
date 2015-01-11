@@ -13,4 +13,13 @@ Ce type de structure vous permettra de protéger votre patrimoine personnel, de 
         android:id="@+id/textviewreponse1"
         android:textColor="#ff000000" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        android:id="@+id/suivant1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
+
 </RelativeLayout>
